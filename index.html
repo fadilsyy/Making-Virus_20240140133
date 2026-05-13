@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web App Deployment</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #f8fafc;
+        }
+        .container {
+            max-width: 700px;
+            padding: 32px;
+            background: rgba(15, 23, 42, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+            border: 1px solid rgba(148, 163, 184, 0.18);
+        }
+        h1 {
+            margin-top: 0;
+            color: #e2e8f0;
+        }
+        p {
+            line-height: 1.7;
+            color: #cbd5e1;
+        }
+        a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+        a.button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 20px;
+            border-radius: 12px;
+            background: #38bdf8;
+            color: #0f172a;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Flask App Deployment</h1>
+        <p>This repository contains a Flask web application in <code>web01.py</code> and a stylesheet in <code>static/style.css</code>.</p>
+        <p>To run the app locally, use:</p>
+        <pre>python web01.py</pre>
+        <p>Then open the app at:</p>
+        <p><a href="/login">/login</a></p>
+        <p>If you want to initialize the sample data, visit:</p>
+        <p><a href="/init">/init</a></p>
+        <a class="button" href="/login">Open App</a>
+    </div>
+</body>
+</html>
